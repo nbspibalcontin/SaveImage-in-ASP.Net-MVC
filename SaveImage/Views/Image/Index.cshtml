@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Upload Image";
+}
+
+<h2>Upload Image</h2>
+
+<form action="/Image/UploadImage" method="post" enctype="multipart/form-data">
+    <label for="imageName">Image Name:</label><br>
+    <input type="text" id="imageName" name="imageDto.ImageName"><br><br>
+    <label for="imageFile">Select an image file:</label><br>
+    <input type="file" id="imageFile" name="imageFile"><br><br>
+    <input type="submit" value="Upload">
+</form>
+
+<a href="@Url.Action("ShowImage", "Image", new { id = "09c8edb5-b094-4c2f-ba0e-9ea874b5e43b" })">View Image</a>
+
